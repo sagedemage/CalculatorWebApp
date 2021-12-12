@@ -1,0 +1,130 @@
+html * {
+	font-family: Arial, Helvetica, sans-serif;	
+}
+body {
+	/* min width is required to make 
+	the website responsive in mobile
+	*/
+	min-width: 100%;
+	min-height: 100%;
+	/*Sets background color 
+	for the whole page*/
+	background-color: #c4ffea;
+}
+
+header {
+	background-image: linear-gradient(90deg, #e5ff00 10%, #00b666 60%,#00b666 90%);
+}
+
+footer {
+	padding-top: 1em;
+	padding-bottom: 5em;
+	color: black;
+}
+
+h1 {
+	padding-left: 50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.navigation {
+	background-color: #303030;
+	/* Set highlighted pagenthe same 
+	width and height as navigation bar */ 
+	overflow: hidden;
+	/*min-height: 1em;*/
+	list-style-type: none;
+	text-decoration: none;
+	text-align: center;
+	font-size: 1.2em;
+	padding: 0;
+	margin: 0;
+}
+
+.navigation li {
+	float: left;
+	width: 8em;
+	color: white;
+}
+.navigation li a {
+	color: white;
+	display: block;
+	padding-top: 0.3em;
+	padding-bottom: 0.3em;
+	text-decoration: none;
+}
+
+.nav-link {
+	font-size: 120%;
+}
+
+.nav-item:hover {
+	background-color: black;
+	color: white;
+	text-decoration: none;
+}
+
+.navbar {
+	padding: 0;
+}
+
+.nav-item {
+	/* width: 150px; */
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: center;
+}
+
+.nav-item:current {
+	background-color: #008747;
+	color: white;
+}
+
+.content {
+	margin-right: 2em;
+	margin-left: 2em;
+	margin-top: 1em;
+	background-color: white;
+	padding-top: 1em;
+	padding-bottom: 2em;
+	padding-left: 2em;
+	padding-right: 2em;
+	font-size: 1em;
+	border: 2px solid darkgreen;
+}
+
+.command {
+	color: black;
+	background-color: lightgray;
+	border-color: gray; 
+	border-style: solid;
+	border-width: 2px;
+	padding: 10px;
+}
+.output {
+	color: white;
+	background-color: gray;
+	border-color: black;
+	border-style: solid;
+	border-width: 2px;
+	padding: 10px;
+}
+
+.responsive_image {
+	max-width: 95%;
+	height: auto;
+}
+
+#copyright {
+	text-align: center;
+	clear: left;
+}
+
+.image-scale {
+	width: 25%;
+}
+
+.table {
+	text-align: center;
+}

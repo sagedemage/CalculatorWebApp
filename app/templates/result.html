@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block head %}
+	{{ super() }}
+{% endblock %}
+{% block content %}
+
+{% with errors = get_flashed_messages(category_filter=["error"]) %}
+  	{% if errors %}
+	<div class="alert-message block-message error">
+    	{% for msg in errors %}
+		<div class="alert alert-danger" role="alert">
+			{{ msg }}
+		</div>
+    	{% endfor %}
+	</div>
+  	{% endif %}
+	{% endwith %}
+
+	{% with successes = get_flashed_messages(category_filter=["success"]) %}
+	{% if successes %}
+	<div class="alert-message block-message success">
+		{% for msg in successes %}
+		<div class="alert alert-success" role="alert">
+			{{ msg }}
+		</div>
+		{% endfor %}
+	</div>
+	{% endif %}
+	{% endwith %}
+
+	<h2> Result </h2>
+	<b> Operation: </b> {{ operation }} <br>
+	<b> Value1: </b> {{ value1 }} <br>
+	<b> Value2: </b> {{ value2 }} <br>
+	<b> Result: </b> {{ result }} <br>
+	<br>
+	<h3> Table </h3>
+	<table class="table">
+		<thead class="thead-dark">
+			<tr>
+				<th> operations </th>
+				<th> value1 </th>
+    			<th> value2 </th>
+    			<th> result </th>
+			</tr>
+		</thead>
+	{% for item in items %}
+		<tr>
+			<td>{{ item[0] }}</td>
+			<td>{{ item[1] }}</td>
+			<td>{{ item[2] }}</td>
+			<td>{{ item[3] }}</td>
+		</tr>
+{% endfor %}
+</table>
+{% endblock %}

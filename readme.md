@@ -5,7 +5,7 @@ can do basic calculations for a user.
 The web application uses Flask, Jinja and Nginx.** 
 
 ## Video Demonstration of my Calculator Web App
-[https://www.youtube.com/watch?v=dOtFL2KQLlw](https://www.youtube.com/watch?v=dOtFL2KQLlw)
+[https://www.youtube.com/watch?v=SK-_wzDcJPE](https://www.youtube.com/watch?v=SK-_wzDcJPE)
 
 ## Functionality of the Application
 The user can do addition, subtraction, multiplication and division of 

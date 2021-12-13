@@ -35,7 +35,7 @@
 	<b> Result: </b> {{ result }} <br>
 	<br>
 	<h3> Table </h3>
-	<table class="table">
+	<table class="table" id="data">
 		<thead class="thead-dark">
 			<tr>
 				<th> operations </th>
@@ -53,4 +53,12 @@
 		</tr>
 {% endfor %}
 </table>
+
+{% block scripts %}
+  <script>
+    $(document).ready(function () {
+      $('#data').DataTable();
+    });
+  </script>
+{% endblock %}
 {% endblock %}

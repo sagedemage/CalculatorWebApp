@@ -13,6 +13,7 @@
 		    crossorigin="anonymous">
         <!-- Linking my stylesheet file to this html page -->
         <link rel="stylesheet" href="../static/styles.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap5.css">
         {% endblock %}
         <meta charset="UTF-8">
         <title>Title</title>
@@ -35,6 +36,10 @@
                 </div>
             </nav>
             {% endblock %}
+            <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script>
+            <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/dataTables.bootstrap5.js"></script>
+            {% block scripts %}{% endblock %}
         </header>
         <div class="content"> {% block content%}{% endblock %} </div>
         <footer>

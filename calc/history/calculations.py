@@ -45,7 +45,6 @@ class Calculations:
         Calculations.table["value1"].clear()
         Calculations.table["value2"].clear()
         Calculations.table["result"].clear()
-        # Calculations.csv_history.clear()
         Calculations.clear_csv_history()
         Calculations.dataframe = pd.DataFrame(Calculations.table)
         Calculations.dataframe.to_csv("output.csv", index=False)
@@ -71,12 +70,10 @@ class Calculations:
         value1 = dataframe["value1"]
         value2 = dataframe["value2"]
         result = dataframe["result"]
-        # Calculations.csv_history.clear()
         Calculations.clear_csv_history()
         for i in range(len(result)):
             item = [operations[i], value1[i], value2[i], result[i]]
             Calculations.csv_history.append(item)
-            print(item)
         return True
 
     @staticmethod

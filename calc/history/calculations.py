@@ -62,7 +62,7 @@ class Calculations:
         return True
 
     @staticmethod
-    def read_csv_file(): # There is a problem with this function please fix it
+    def read_csv_file():
         # pylint: disable=consider-using-enumerate
         """Read the history from csv and put it into the history """
         dataframe = pd.read_csv('output.csv')

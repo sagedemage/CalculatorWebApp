@@ -1,6 +1,4 @@
 # Calculator Web Application
-[![Build Status](http://localhost:8080/buildStatus/icon?job=CalculatorWebApp)](http://localhost:8080/job/CalculatorWebApp/)
-
 **The calculator web application is the program that
 can do basic calculations for a user. 
 The web application uses Flask, Jinja and Nginx.

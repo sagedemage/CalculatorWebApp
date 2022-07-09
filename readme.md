@@ -2,7 +2,8 @@
 
 **The calculator web application is the program that
 can do basic calculations for a user. 
-The web application uses Flask, Jinja and Nginx.** 
+The web application uses Flask, Jinja and Nginx.
+Pandas is used for unit testing.** 
 
 ## Video Demonstration of my Calculator Web App
 [https://www.youtube.com/watch?v=nUKfz3-4IQQ](https://www.youtube.com/watch?v=nUKfz3-4IQQ)

@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                pytest --pylint --cov
+				python -m pytest --pylint --cov
             }
         }
     }

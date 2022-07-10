@@ -19,3 +19,31 @@ two values. It also shows the result of the calculation and shows a
 table on the history of calculations. The user can clear the history 
 of calculations if the user wants to.
 
+## Setting up the docker container of the web applicaiton
+
+Build the docker container:
+````
+docker-compose build
+````
+
+Start the docker container:
+````
+docker-compose up -d
+````
+
+To access the docker container shell:
+````
+docker exec -it $(docker ps -q) /bin/bash
+````
+
+## Unit testing the web application
+
+Access the docker container shell:
+````
+docker exec -it $(docker ps -q) /bin/bash
+````
+
+Run pytest to test the web app
+```
+pytest
+```

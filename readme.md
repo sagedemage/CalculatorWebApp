@@ -1,10 +1,8 @@
 # Calculator Web Application
 
 [![Production Workflow](https://github.com/sagedemage/CalculatorWebApp/actions/workflows/prod.yml/badge.svg)](https://github.com/sagedemage/CalculatorWebApp/actions/workflows/prod.yml)
-* [Production Deployment](https://calculator-prod.herokuapp.com/)
 
 [![Development Workflow](https://github.com/sagedemage/CalculatorWebApp/actions/workflows/dev.yml/badge.svg)](https://github.com/sagedemage/CalculatorWebApp/actions/workflows/dev.yml)
-* [Development Deployment](https://calculator-dev.herokuapp.com/)
 
 
 **The calculator web application is the program that
